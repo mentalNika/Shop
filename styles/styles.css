@@ -139,7 +139,7 @@
   border-radius: 10px;
   transition: background-color linear 0.3s;
   @media (max-width: 1150px) {
-    padding: 17px 36px;
+    padding: 18px 36px;
     font-size: 17px;
   }
 }
@@ -191,6 +191,7 @@
   font-size: 16px;
   font-weight: 400;
   color: var(--color-black);
+  line-height: 1.5;
   text-align: center;
 }
 
@@ -221,7 +222,7 @@
 
 .modern-design__price-wrapper {
   display: flex;
-  gap: 15px;
+  gap: 12px;
   padding-top: 17px;
 }
 
@@ -237,6 +238,10 @@
   font-size: 18px;
   color: var(--color-black);
   font-weight: 400;
+
+  @media (max-width: 1150px) {
+    font-size: 14px;
+  }
 }
 
 .modern-design__video-wrapper {
@@ -444,7 +449,7 @@
 
 .our-shops {
   position: absolute;
-  top: -150px;
+  top: -210px;
   max-width: 1125px;
   width: 100%;
   padding-top: 83px;
@@ -452,7 +457,7 @@
   border-radius: 15px;
   overflow: hidden;
   @media (max-width: 1150px) {
-    top: -461px;
+    top: -473px;
   }
 }
 
@@ -523,7 +528,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 0 30px;
+    padding: 0 30px 0 30px;
   }
 }
 
@@ -537,17 +542,17 @@
   text-align: center;
   @media (max-width: 1150px) {
     text-align: left;
+
+    .header__title {
+      text-align: left;
+    }
+
+    .button {
+      margin: 0;
+      margin-top: 40px;
+      padding: 20px;
+    }
   }
-}
-
-.footer__center .header__title {
-  text-align: left;
-}
-
-.footer__center .button {
-  margin: 0;
-  margin-top: 40px;
-  padding: 20px;
 }
 
 .footer__email {
