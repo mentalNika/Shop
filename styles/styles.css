@@ -1,3 +1,13 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #191919;
+  --color-yellow: #f4df74;
+  --color-yellow-hover: #e0c641;
+  --color-light-gray: #eeeeee;
+  --color-dark-gray: #2c2c2c;
+  --color-almost-white: #e6e6e6;
+}
+
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter_18pt-Regular.ttf") format("woff2");
@@ -63,13 +73,12 @@
 .contacts__text {
   font-family: "RFDewiExpanded";
   font-size: 14px;
-  color: white;
+  color: var(--color-white);
   font-weight: 800;
 }
 
 .contacts--top {
   display: flex;
-
   @media (max-width: 1150px) {
     display: none;
   }
@@ -77,9 +86,7 @@
 
 .contacts--bottom {
   display: none;
-
   @media (max-width: 1150px) {
-    display: none;
     display: flex;
     margin-top: 260px;
     padding: 0 30px;
@@ -89,13 +96,13 @@
 .contacts__text-description {
   font-family: "Inter";
   font-size: 14px;
-  color: white;
+  color: var(--color-white);
 }
 
 .header__title {
   font-family: "RFDewiExpanded";
   font-size: 25px;
-  color: white;
+  color: var(--color-white);
   font-weight: 800;
   text-align: center;
 }
@@ -103,7 +110,7 @@
 .header__subtitle {
   font-family: "RFDewiExpanded";
   font-size: 16px;
-  color: white;
+  color: var(--color-white);
   font-weight: 400;
   text-align: center;
 }
@@ -112,10 +119,9 @@
   padding-top: 133px;
   font-family: "RFDewiExpanded";
   font-size: 60px;
-  color: white;
+  color: var(--color-white);
   font-weight: 800;
   text-align: center;
-
   @media (max-width: 1150px) {
     font-size: 35px;
   }
@@ -126,13 +132,12 @@
   padding: 22px 36px;
   margin: 0 auto;
   margin-top: 50px;
-  background-color: #f4df74;
+  background-color: var(--color-yellow);
   font-family: "RFDewiExpanded";
   font-weight: 800;
   font-size: 16px;
   border-radius: 10px;
   transition: background-color linear 0.3s;
-
   @media (max-width: 1150px) {
     padding: 17px 36px;
     font-size: 17px;
@@ -140,7 +145,7 @@
 }
 
 .button:hover {
-  background-color: #e0c641;
+  background-color: var(--color-yellow-hover);
 }
 
 .modern-design {
@@ -149,8 +154,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: white;
-
+  background-color: var(--color-white);
   @media (max-width: 1150px) {
     margin-top: 100px;
     margin-bottom: 276px;
@@ -162,10 +166,9 @@
   margin-bottom: 55px;
   font-family: "RFDewiExpanded";
   font-size: 48px;
-  color: #191919;
+  color: var(--color-black);
   font-weight: 800;
   text-align: center;
-
   @media (max-width: 1150px) {
     font-size: 35px;
     margin-bottom: 70px;
@@ -174,7 +177,7 @@
 
 .main__title--light {
   margin-bottom: 46px;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .main__title--lg {
@@ -187,12 +190,12 @@
   font-family: "Inter";
   font-size: 16px;
   font-weight: 400;
-  color: #191919;
+  color: var(--color-black);
   text-align: center;
 }
 
 .main__text--light {
-  color: #fff;
+  color: var(--color-white);
 }
 
 .modern-design__list {
@@ -202,15 +205,13 @@
   gap: 35px;
   align-items: center;
   justify-items: center;
-
   @media (max-width: 1150px) {
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
   }
 }
 
 .modern-design__list-item {
-  background-color: white;
+  background-color: var(--color-white);
   border-radius: 6px;
 }
 
@@ -227,14 +228,14 @@
 .modern-design__description {
   font-family: "RFDewiExpanded";
   font-size: 24px;
-  color: #000;
+  color: var(--color-black);
   font-weight: 400;
 }
 
 .modern-design__price {
   font-family: "RFDewiExpanded";
   font-size: 18px;
-  color: #000;
+  color: var(--color-black);
   font-weight: 400;
 }
 
@@ -248,7 +249,6 @@
   width: 100%;
   height: 350px;
   border-radius: 15px;
-
   @media (max-width: 1150px) {
     top: 109px;
   }
@@ -256,8 +256,7 @@
 
 .production {
   padding-top: 305px;
-  background-color: #eeeeee;
-
+  background-color: var(--color-light-gray);
   @media (max-width: 1150px) {
     padding: 247px 30px 0 30px;
   }
@@ -271,7 +270,6 @@
   max-width: 1130px;
   margin: 0 auto;
   gap: 34px;
-
   @media (max-width: 1150px) {
     padding: 40px 0 70px 0;
     grid-template-columns: 1fr;
@@ -293,7 +291,7 @@
   font-family: "RFDewiExpanded";
   font-size: 20px;
   font-weight: 800;
-  color: #191919;
+  color: var(--color-black);
   text-align: center;
 }
 
@@ -302,7 +300,6 @@
   padding-bottom: 320px;
   max-width: 1130px;
   margin: 0 auto;
-
   @media (max-width: 1150px) {
     padding: 110px 30px 190px 30px;
   }
@@ -342,7 +339,7 @@
 }
 
 .scheme {
-  background-color: #191919;
+  background-color: var(--color-black);
 }
 
 .scheme__wrapper {
@@ -351,7 +348,6 @@
   margin: 0 auto;
   padding-top: 298px;
   padding-bottom: 174px;
-
   @media (max-width: 1150px) {
     padding: 230px 30px 110px 30px;
   }
@@ -370,7 +366,6 @@
   background-size: cover;
   border-radius: 15px;
   text-align: center;
-
   @media (max-width: 1150px) {
     height: 270px;
     top: -130px;
@@ -384,7 +379,7 @@
   font-family: "RFDewiExpanded";
   font-size: 24px;
   font-weight: 800;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .scheme__list {
@@ -394,7 +389,6 @@
   margin: 0 auto;
   max-width: 750px;
   gap: 80px;
-
   @media (max-width: 1150px) {
     grid-template-columns: 1fr 1fr;
     gap: 50px;
@@ -428,7 +422,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 36px;
   margin-top: 80px;
-
   @media (max-width: 1150px) {
     grid-template-columns: 1fr 1fr;
   }
@@ -455,7 +448,7 @@
   max-width: 1125px;
   width: 100%;
   padding-top: 83px;
-  background-color: #e6e6e6;
+  background-color: var(--color-almost-white);
   border-radius: 15px;
   overflow: hidden;
   @media (max-width: 1150px) {
@@ -467,31 +460,26 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 60px;
-
   @media (max-width: 1150px) {
     grid-template-columns: 1fr;
   }
 }
 
-.our-shops__spb {
-  background-image: url("../images/spb.jpg");
-  width: 100%;
-  height: 472px;
-}
-
-.our-shops__msc {
-  background-image: url("../images/msc.jpg");
-  width: 100%;
-  height: 472px;
-}
-
 .our-shops__spb,
 .our-shops__msc {
-  position: relative; /* для позиционирования текста внутри */
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 472px;
+  position: relative;
+}
+
+.our-shops__spb {
+  background-image: url("../images/spb.jpg");
+}
+
+.our-shops__msc {
+  background-image: url("../images/msc.jpg");
 }
 
 .our-shops__text {
@@ -500,21 +488,21 @@
   left: 27px;
   margin: 0;
   font-family: "RFDewiExpanded";
-  color: white;
+  color: var(--color-white);
   font-weight: 800;
   font-size: 24px;
 }
 
 .our-colabs {
   padding-top: 764px;
-  background-color: #191919;
-  border-bottom: 1px solid #2c2c2c;
+  background-color: var(--color-black);
 }
 
 .our-colabs__wrapper {
   padding-bottom: 80px;
   max-width: 1130px;
   margin: 0 auto;
+  border-bottom: 1px solid var(--color-dark-gray);
   @media (max-width: 1150px) {
     padding: 310px 30px 108px 30px;
   }
@@ -523,7 +511,7 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 34px;
-  background-color: #191919;
+  background-color: var(--color-black);
 }
 
 .footer__list {
@@ -531,8 +519,39 @@
   max-width: 1130px;
   display: grid;
   grid-template-columns: 2fr 6fr 2fr;
+  @media (max-width: 1150px) {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 30px;
+  }
+}
+
+.footer__phone {
+  @media (max-width: 1150px) {
+    order: 1;
+  }
 }
 
 .footer__center {
   text-align: center;
+  @media (max-width: 1150px) {
+    text-align: left;
+  }
+}
+
+.footer__center .header__title {
+  text-align: left;
+}
+
+.footer__center .button {
+  margin: 0;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.footer__email {
+  @media (max-width: 1150px) {
+    order: 3;
+  }
 }
