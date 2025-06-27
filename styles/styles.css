@@ -512,6 +512,7 @@
 }
 
 .our-colabs__wrapper {
+  padding-bottom: 80px;
   max-width: 1130px;
   margin: 0 auto;
   @media (max-width: 1150px) {
@@ -521,14 +522,15 @@
 
 .footer {
   padding-top: 60px;
+  padding-bottom: 34px;
   background-color: #191919;
 }
 
-.footer__wrapper {
+.footer__list {
   margin: 0 auto;
   max-width: 1130px;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 2fr 6fr 2fr;
 }
 
 .footer__center {
